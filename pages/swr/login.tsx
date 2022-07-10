@@ -1,4 +1,4 @@
-import { useQuery } from 'react-query';
+import useSWR from 'swr';
 import { Text } from '@mantine/core';
 
 const fetchLogin = (): Promise<{
@@ -20,7 +20,7 @@ const login = async () => {
 };
 
 const Login = () => {
-  const { data: user } = useQuery('login', login);
+  const { data: user } = useSWR('login', login);
 
   return <Text>{JSON.stringify(user)}</Text>;
 };
