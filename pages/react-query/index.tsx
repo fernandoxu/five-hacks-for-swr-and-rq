@@ -7,6 +7,7 @@ import Logger from './logger';
 import GPS from './GPS';
 import Link from 'next/link';
 import Webworker from './webworker';
+import GlobalState from './global-state';
 
 const ReactQueryDemo = () => (
   <Container>
@@ -30,6 +31,8 @@ const ReactQueryDemo = () => (
       <GPS />
       <Title>web worker</Title>
       <Webworker />
+      <Title>global state</Title>
+      <GlobalState />
     </Stack>
   </Container>
 );

@@ -1,5 +1,6 @@
 import { Button, Container, Stack, Title } from '@mantine/core';
 import Link from 'next/link';
+import GlobalState from './global-state';
 import GPS from './GPS';
 import Logger from './logger';
 import Login from './login';
@@ -29,6 +30,8 @@ const SwrDemo = () => {
         <GPS />
         <Title>web worker</Title>
         <Webworker />
+        <Title>global state</Title>
+        <GlobalState />
       </Stack>
     </Container>
   );
